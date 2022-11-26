@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(53, 53, 53);
+}
+
+/* Circle behind */
+div.circleBehind a:before, div.circleBehind a:after
+{
+    position: absolute;
+    top: 22px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border: 4px solid #0277bd;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    border-radius: 50%;
+    background: transparent;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+div.circleBehind a:after
+{
+    border-width: 2px;
+    transition: all 0.4s;
+}
+
+div.circleBehind a:hover:before
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.circleBehind a:hover:after
+{
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+.blue
+{
+    background: #2196f3;
+}
+
+div.container
+{
+    font-family: Raleway;
+    margin: 0 auto;
+	padding: 1em 3em;
+	text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+div.container a
+{
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+.cards{
+    display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: whitesmoke;
+}
+.cards img{
+    height: 100px;
+}
+.card-items{
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+}
+.btn{
+    font-size: 1rem;
+    padding: 8px 4px;
+    border-radius: 5px;
+    background-color: teal;
+    border: 2px solid black;
+}
+.button{
+    padding: 12px 0px;
+}
+.roll{
+    color: thistle;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5rem;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(4, 207, 207);
+}
+.questions{
+    text-align: center;
+}
+.questions h2{
+    color: whitesmoke;
+    font-size: 1.6rem;
+}
+.common-qa{
+    color: white;
+}
+.youtube{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(248, 247, 247);
+    height: 300px;
+}
+.youtube1{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    background-color: rgb(83, 83, 83);
+    height: 300px;
+}
+.youtube2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(248, 247, 247);
+    height: 300px;
+}
+.youtube3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    background-color: rgb(83, 83, 83);
+    height: 300px;
+}
+.discription{
+    font-family: 'Patrick Hand', cursive; 
+}
