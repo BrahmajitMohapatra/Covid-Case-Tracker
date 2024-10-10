@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-/* Circle behind */
+/* Circle Behind */
 div.circleBehind a:before, div.circleBehind a:after
 {
     position: absolute;
